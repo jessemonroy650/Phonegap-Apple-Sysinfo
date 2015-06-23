@@ -16,9 +16,9 @@
         <gap:platform name="ios" />
 
         <preference name="permissions" value="none"/>
-		<!-- device required so we can detect if we are using iOS -->
+        <!-- device required so we can detect if we are using iOS -->
         <gap:plugin name="org.apache.cordova.device" />
         <gap:plugin name="org.apache.cordova.network-information" />
 
-		<gap:plugin name="com.ankamagames.plugins.sysinfo" />
+        <gap:plugin name="com.ankamagames.plugins.sysinfo" />
     </widget>
