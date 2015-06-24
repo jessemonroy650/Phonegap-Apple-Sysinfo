@@ -9,6 +9,7 @@
     .hidden {visibility:collapse;display:none;}
     .expose {visibility:visible;display:block;} /* Here for completeness only. */
     .copyright {padding:5px;align:left;font-style:italic;font-size:small;}
+    .uuid {font-size:small;}
     #header {margin:0;padding:0;}
     #exitApp {margin:1em;float:right;}
     </style>
@@ -67,6 +68,8 @@
             document.getElementById('exitApp').classList.add("hidden");
             // Hidden systemInfo since this is not yet available for Apple - 2015-06-24
             document.getElementById('sysinfo_button').classList.add("hidden");
+            // change font-size to small for Apple - 2015-06-24
+            document.getElementById('uuid').classList.add("uuid");
             /* deals with post-iOS-7 change that covers the status bar */
             /* http://coenraets.org/blog/2013/09/phonegap-and-cordova-with-ios-7/ */
             document.body.style.marginTop = "20px";
@@ -99,7 +102,7 @@
     <div id=c class="button button-block button-royal">cordova <span id=cordova></span></div>
     <div id=m class="button button-block button-action">model <span id=model></span></div>
     <div id=p class="button button-block button-primary">platform <span id=platform></span></div>
-    <div id=u class="button button-block button-caution">UUID<br /> <span id=uuid>uuid</span></div>
+    <div id=u class="button button-block button-caution">UUID</div>
     <div id=u class="button button-block button-caution"><span id=uuid>uuid</span></div>
     <div id=v class="button button-block button-highlight">Version <span id=version>version</span></div>
 </div>
